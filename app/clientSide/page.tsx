@@ -41,7 +41,7 @@ export default function ClientSide() {
 
                 {/* Heading */}
                 <div className={`${Font.className} flex justify-center items-center text-center text-bold text-7xl`}>
-                    <h1>Client Side Fatching</h1>
+                    <h1>Client Side Fetching</h1>
                 </div>
 
                 {/* Data Fetch */}
