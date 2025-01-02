@@ -2,6 +2,7 @@ import Image from "next/image"
 import { MdStarRate } from "react-icons/md";
 import { Button } from "./ui/button";
 import {Molengo} from "next/font/google";
+
 const Font = Molengo ({
     subsets : ["latin"],
     weight : ['400']
