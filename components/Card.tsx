@@ -34,7 +34,7 @@ export default function CardBox(props: ICard) {
                     <Image src={props.image}
                         alt="product Image"
                         width={300}
-                        height={100} className="w-[150px] flex justify-center items-center">
+                        height={100} className="w-[150px] h-[150px] flex justify-center items-center">
                     </Image>
                     <CardDescription className="text-[20px]">
                         {props.category}
