@@ -29,7 +29,7 @@ interface ICard {
 export default function CardBox(props: ICard) {
     return (
         <div >
-            <Card className={ ` style w-[350px] h-[500px] ${Font.className} flex flex-col justify-center items-center `} >
+            <Card className={ ` style w-[300px] h-[500px] ${Font.className} flex flex-col justify-center items-center mt-2 mb-2`} >
                 <CardHeader >
                     <Image src={props.image}
                         alt="product Image"
