@@ -1,20 +1,23 @@
-import {
-  AlertDialog,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogCancel,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
-import Link from "next/link";
+// import {
+//   AlertDialog,
+//   AlertDialogContent,
+//   AlertDialogDescription,
+//   AlertDialogFooter,
+//   AlertDialogHeader,
+//   AlertDialogCancel,
+//   AlertDialogTitle,
+//   AlertDialogTrigger,
+// } from "@/components/ui/alert-dialog"
+// import Link from "next/link";
+import HeroPage from "@/components/HeroPage";
+
 
 export default function Home() {
   return (
     <div>
 
-      <div className=" flex flex-col justify-center items-center  h-screen">
+<HeroPage/>
+      {/* <div className=" flex flex-col justify-center items-center  h-screen">
         <div className="style flex justify-center items-center">
           <AlertDialog>
             <AlertDialogTrigger className=" border p-3 rounded-full shadow-md ">Which kind of side information would you like to fetch? (Click)</AlertDialogTrigger>
@@ -34,7 +37,7 @@ export default function Home() {
           </AlertDialog>
 
         </div>
-      </div>
+      </div> */}
 
 
 

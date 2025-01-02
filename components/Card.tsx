@@ -29,38 +29,37 @@ interface ICard {
 export default function CardBox(props: ICard) {
     return (
         <div >
-            <Card className={ ` style w-[350px] h-auto ${Font.className}`} >
+            <Card className={ ` style w-[350px] h-[500px] ${Font.className} flex flex-col justify-center items-center `} >
                 <CardHeader >
                     <Image src={props.image}
                         alt="product Image"
                         width={300}
-                        height={100}>
-
+                        height={100} className="w-[150px] flex justify-center items-center">
                     </Image>
                     <CardDescription className="text-[20px]">
                         {props.category}
                     </CardDescription>
                     <CardTitle className="text-2xl">
-                        {props.title}
+                        {props.title.substring(0,12)}...
                     </CardTitle>
                 </CardHeader>
-                <CardContent className="text-lg">
+                <CardContent className="text-lg line-clamp-2 leading-tight mb-2 ">
                     {props.description}
                 </CardContent>
                
                 <CardFooter className="flex  justify-start items-start flex-col gap-2 font-bold text-lg">
                     <div className=" text-2xl ">
-                    ${props.price}
+                    Rate: ${props.price}
                     </div>
                     <div className="flex justify-center items-center text-center text-yellow-400 
                     ">
-                    < MdStarRate size={20}/> {props.star} 
+                    < MdStarRate size={20}/> {props.star} rating 
                     </div>
                     <div className="italic ">
                     ({props.reviews}) reviews
                     </div>
                     <div>
-                        <Button>
+                        <Button className="hover:bg-white hover:text-black border-[1px]">
                             Buy Now
                         </Button>
                     </div>

@@ -11,7 +11,7 @@ interface IBooks {
     id: number,
     name: string,
     type: string,
-    available : boolean,
+    available :boolean
 
 }
 
@@ -19,7 +19,6 @@ interface IBooks {
 const ServerSide = async () => {
     const response = await fetch("https://simple-books-api.glitch.me/books/");
     const parsedResponse: IBooks[] = await response.json();
-
 
     return (
         <div className="mt-40 mb-40 ">
